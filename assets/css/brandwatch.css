@@ -1,3 +1,90 @@
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/Roboto-Light-webfont.eot');
+    src: url('../fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Light-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Light-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main-header {
+	background: #040404 url('../img/header-plain.png') no-repeat scroll center;
+	display: table;
+	height: 343px;
+}
+
+.main-header-content-wrapper {
+	background: transparent url('../img/brandwatch-logo.png') no-repeat scroll 0 0;
+	max-width: 1220px;
+	height: 343px;
+	position: relative;
+}
+
+.main-header .main-header-content {
+	max-width: 1220px;
+}
+
+.main-header-content {
+	font-family: 'Roboto';
+	text-align: left;
+	color: #FFF;
+	opacity: 0.9;
+	position: absolute;
+	bottom: 1em;
+}
+	.main-header-content .page-title span.light {
+		font-family: 'robotolight';
+		font-weight: 100;
+	}
+
+.post {
+	max-width: 1220px;
+}
+
+h1.post-title,
+h2.post-title {
+	font-family: 'robotolight';
+	font-size: 42px;
+	color: #4a4a4a;
+	letter-spacing: -0.01em;
+	line-height: 1.4;
+}
+
+section.post-excerpt {
+	font-family: 'robotolight';
+	font-size: 18px;
+	color: #4a4a4a;
+	line-height: 1.4;
+}
+
+.post-meta {
+	font-family: 'Roboto';
+	font-size: 14px;
+	color: #999999;
+	letter-spacing: -0.01em;
+	line-height: 2;
+}
+
+.post-footer,
+.post-footer a,
+.post-footer h4,
+.post-footer h4 a {
+	font-family: 'Roboto';
+	font-size: 14px;
+	color: #999999;
+	letter-spacing: -0.01em;
+}
+
+footer.site-footer {
+	font-family: 'robotolight';
+}
+
+/* ==========================================================================
+   Disqus
+   ========================================================================== */
+
 .comments-link {
 	display: inline-block;
 	margin-left: 8px;
@@ -6,4 +93,17 @@
 	text-transform: uppercase;
 	font-size: 1.3rem;
 	white-space: nowrap;
+}
+
+/* ==========================================================================
+   Media Queries - Smaller than 500px
+   ========================================================================== */
+
+@media only screen and (max-width: 500px) {
+	.main-header-content-wrapper {
+		margin-top: 0;
+        margin-bottom: 2rem;
+        margin-left: 16px;
+        margin-right: 16px;
+	}
 }

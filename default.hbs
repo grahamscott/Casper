@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/brandwatch.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto"/>
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -34,6 +34,18 @@
     </script>
 </head>
 <body class="{{body_class}}">
+
+    {{! The big featured header }}
+    <header class="main-header">
+        <nav class="main-nav overlay clearfix">
+            <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
+        </nav>
+        <div class="main-header-content-wrapper inner">
+            <div class="main-header-content">
+                <h1 class="page-title"><span class="light">Brandwatch/</span> Engineering</h1>
+            </div>
+        </div>
+    </header>
 
     {{! Everything else gets inserted here }}
     {{{body}}}
