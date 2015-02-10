@@ -81,6 +81,65 @@ footer.site-footer {
 	font-family: 'robotolight';
 }
 
+.post-footer .share {
+	text-align: right;
+}
+
+.post-footer .share a:last-child {
+	margin-right: 0;
+}
+
+/* ==========================================================================
+   Tag page
+   ========================================================================== */
+
+.tag-section {
+    padding: 0 15px 5rem 15px;
+    border-bottom: #EBF2F6 1px solid;
+    text-align: center;
+}
+
+/* Add a little circle in the middle of the border-bottom */
+.tag-section:after {
+    display: block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: #E7EEF2 1px solid;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    background: #FFF;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    box-shadow: #FFF 0 0 0 5px;
+}
+
+/* list of author links - location / url */
+.tag-meta {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1.4rem;
+    line-height: 1;
+    font-style: italic;
+    color: #9EABB3;
+
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.01rem;
+    font-size: 1.7rem;
+}
+
+.tag-meta a {
+    color: #9EABB3;
+}
+.tag-meta a:hover {
+    color: #111;
+}
+
+
 /* ==========================================================================
    Disqus
    ========================================================================== */
