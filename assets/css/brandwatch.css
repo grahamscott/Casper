@@ -40,9 +40,11 @@
 	position: absolute;
 	bottom: 1em;
 }
+	.main-header-content .page-title {
+		font-weight: 100;
+	}
 	.main-header-content .page-title span.light {
 		font-family: 'robotolight';
-		font-weight: 100;
 	}
 
 .post {
@@ -67,7 +69,7 @@
 
 .post-content p {
 	color: #4A4A4A;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 
 .post-content a,
