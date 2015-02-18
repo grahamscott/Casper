@@ -28,7 +28,6 @@
 }
 
 .main-header-content-wrapper {
-	background: transparent url('../img/brandwatch-logo.png') no-repeat scroll 0 0;
 	max-width: 1220px;
 	height: 343px;
 	position: relative;
@@ -42,6 +41,10 @@
 
 .main-header .main-header-content {
 	max-width: 1220px;
+}
+
+.header-logo {
+	float:left;
 }
 
 .main-header-content {
